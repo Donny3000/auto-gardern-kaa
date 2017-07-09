@@ -1,0 +1,12 @@
+{
+	"type": "record",
+	"name": "Configuration",
+	"namespace": "org.kaaproject.kaa.schema.sensordata",
+	"fields": [
+		{
+			"name": "sampleFrequency",
+			"type": "int",
+			"by_default": 1
+		}
+	]
+}

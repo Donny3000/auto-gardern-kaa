@@ -1,0 +1,11 @@
+{
+	"type": "record",
+	"name": "SensorCollection",
+	"namespace": "org.kaaproject.kaa.schema.sensordata",
+	"fields": [
+		{
+			"name": "soil_temperature",
+			"type": "double"
+		}
+	]
+}
