@@ -1,12 +1,19 @@
 {
 	"type": "record",
 	"name": "Configuration",
-	"namespace": "org.kaaproject.kaa.schema.sensordata",
+	"namespace": "ardugarden.schema.sensordata",
 	"fields": [
 		{
-			"name": "sampleFrequency",
+			"name": "samplePeriod",
 			"type": "int",
-			"by_default": 1
-		}
+			"by_default": 1,
+            "optional": true
+		},
+        {
+            "name": "turnWaterOn",
+            "type": "boolean",
+            "by_default": false,
+            "optional": true
+        }
 	]
 }

@@ -1,0 +1,13 @@
+{
+	"type": "record",
+	"name": "EndnodeNotifications",
+	"namespace": "ardugarden.schema.notifications",
+	"displayName": "ArduGarden Notifications",
+	"fields": [
+        {
+            "name": "turnWaterOn",
+            "type": "boolean",
+            "by_default": false
+        }
+	]
+}

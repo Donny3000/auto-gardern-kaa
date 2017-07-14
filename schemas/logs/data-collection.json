@@ -1,0 +1,34 @@
+{
+  "type" : "record",
+  "name" : "DataCollection",
+  "namespace" : "ardugarden.schema.sensordata",
+  "version" : 1,
+  "displayName" : "Sensor Node Data",
+  "fields" : [
+      {
+          "name" : "soil_temperature",
+          "type" : [ "double", "null" ],
+          "displayName": "Soil Temperature"
+      },
+      {
+          "name" : "soil_volmetric_water_content",
+          "type" : [ "double", "null" ],
+          "displayName" : "Soil Volmetric Water Content"
+      },
+      {
+          "name" : "ambient_air_temp",
+          "type" : [ "double", "null" ],
+          "displayName" : "Ambient Air Temperature"
+      },
+      {
+          "name" : "ambient_air_humidity",
+          "type" : [ "double", "null" ],
+          "displayName" : "Ambient Air Humidity"
+      },
+      {
+          "name" : "ambient_luminosity",
+          "type" : [ "double", "null" ],
+          "displayName" : "Ambient Luminosity"
+      }
+  ]
+}

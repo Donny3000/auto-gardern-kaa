@@ -21,7 +21,6 @@
 #define KAA_GEN_ENDPOINTGEN_HPP_293169158__H_
 
 
-#include <sstream>
 #include "boost/any.hpp"
 #include "avro/Specific.hh"
 #include "avro/Encoder.hh"
@@ -31,10 +30,6 @@ namespace kaa {
 struct TopicState {
     int64_t topicId;
     int32_t seqNumber;
-    TopicState() :
-        topicId(int64_t()),
-        seqNumber(int32_t())
-        { }
 };
 
 enum SyncResponseStatus {
@@ -85,21 +80,12 @@ enum UserAttachErrorCode {
 struct SubscriptionCommand {
     int64_t topicId;
     SubscriptionCommandType command;
-    SubscriptionCommand() :
-        topicId(int64_t()),
-        command(SubscriptionCommandType())
-        { }
 };
 
 struct UserAttachRequest {
     std::string userVerifierId;
     std::string userExternalId;
     std::string userAccessToken;
-    UserAttachRequest() :
-        userVerifierId(std::string()),
-        userExternalId(std::string()),
-        userAccessToken(std::string())
-        { }
 };
 
 struct _endpoint_avsc_Union__0__ {
@@ -144,36 +130,20 @@ struct UserAttachResponse {
     SyncResponseResultType result;
     errorCode_t errorCode;
     errorReason_t errorReason;
-    UserAttachResponse() :
-        result(SyncResponseResultType()),
-        errorCode(errorCode_t()),
-        errorReason(errorReason_t())
-        { }
 };
 
 struct UserAttachNotification {
     std::string userExternalId;
     std::string endpointAccessToken;
-    UserAttachNotification() :
-        userExternalId(std::string()),
-        endpointAccessToken(std::string())
-        { }
 };
 
 struct UserDetachNotification {
     std::string endpointAccessToken;
-    UserDetachNotification() :
-        endpointAccessToken(std::string())
-        { }
 };
 
 struct EndpointAttachRequest {
     int32_t requestId;
     std::string endpointAccessToken;
-    EndpointAttachRequest() :
-        requestId(int32_t()),
-        endpointAccessToken(std::string())
-        { }
 };
 
 struct _endpoint_avsc_Union__2__ {
@@ -199,29 +169,16 @@ struct EndpointAttachResponse {
     int32_t requestId;
     endpointKeyHash_t endpointKeyHash;
     SyncResponseResultType result;
-    EndpointAttachResponse() :
-        requestId(int32_t()),
-        endpointKeyHash(endpointKeyHash_t()),
-        result(SyncResponseResultType())
-        { }
 };
 
 struct EndpointDetachRequest {
     int32_t requestId;
     std::string endpointKeyHash;
-    EndpointDetachRequest() :
-        requestId(int32_t()),
-        endpointKeyHash(std::string())
-        { }
 };
 
 struct EndpointDetachResponse {
     int32_t requestId;
     SyncResponseResultType result;
-    EndpointDetachResponse() :
-        requestId(int32_t()),
-        result(SyncResponseResultType())
-        { }
 };
 
 struct _endpoint_avsc_Union__3__ {
@@ -268,22 +225,11 @@ struct Event {
     std::vector<uint8_t> eventData;
     source_t source;
     target_t target;
-    Event() :
-        seqNum(int32_t()),
-        eventClassFQN(std::string()),
-        eventData(std::vector<uint8_t>()),
-        source(source_t()),
-        target(target_t())
-        { }
 };
 
 struct EventListenersRequest {
     int32_t requestId;
     std::vector<std::string > eventClassFQNs;
-    EventListenersRequest() :
-        requestId(int32_t()),
-        eventClassFQNs(std::vector<std::string >())
-        { }
 };
 
 struct _endpoint_avsc_Union__5__ {
@@ -309,23 +255,13 @@ struct EventListenersResponse {
     int32_t requestId;
     listeners_t listeners;
     SyncResponseResultType result;
-    EventListenersResponse() :
-        requestId(int32_t()),
-        listeners(listeners_t()),
-        result(SyncResponseResultType())
-        { }
 };
 
 struct EventSequenceNumberRequest {
-    EventSequenceNumberRequest()
-        { }
 };
 
 struct EventSequenceNumberResponse {
     int32_t seqNum;
-    EventSequenceNumberResponse() :
-        seqNum(int32_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__6__ {
@@ -372,31 +308,16 @@ struct Notification {
     uid_t uid;
     seqNumber_t seqNumber;
     std::vector<uint8_t> body;
-    Notification() :
-        topicId(int64_t()),
-        type(NotificationType()),
-        uid(uid_t()),
-        seqNumber(seqNumber_t()),
-        body(std::vector<uint8_t>())
-        { }
 };
 
 struct Topic {
     int64_t id;
     std::string name;
     SubscriptionType subscriptionType;
-    Topic() :
-        id(int64_t()),
-        name(std::string()),
-        subscriptionType(SubscriptionType())
-        { }
 };
 
 struct LogEntry {
     std::vector<uint8_t> data;
-    LogEntry() :
-        data(std::vector<uint8_t>())
-        { }
 };
 
 struct _endpoint_avsc_Union__8__ {
@@ -461,12 +382,6 @@ struct SyncRequestMetaData {
     endpointPublicKeyHash_t endpointPublicKeyHash;
     profileHash_t profileHash;
     timeout_t timeout;
-    SyncRequestMetaData() :
-        sdkToken(std::string()),
-        endpointPublicKeyHash(endpointPublicKeyHash_t()),
-        profileHash(profileHash_t()),
-        timeout(timeout_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__11__ {
@@ -511,29 +426,16 @@ struct ProfileSyncRequest {
     endpointPublicKey_t endpointPublicKey;
     std::vector<uint8_t> profileBody;
     endpointAccessToken_t endpointAccessToken;
-    ProfileSyncRequest() :
-        endpointPublicKey(endpointPublicKey_t()),
-        profileBody(std::vector<uint8_t>()),
-        endpointAccessToken(endpointAccessToken_t())
-        { }
 };
 
 struct ProtocolVersionPair {
     int32_t id;
     int32_t version;
-    ProtocolVersionPair() :
-        id(int32_t()),
-        version(int32_t())
-        { }
 };
 
 struct BootstrapSyncRequest {
     int32_t requestId;
     std::vector<ProtocolVersionPair > supportedProtocols;
-    BootstrapSyncRequest() :
-        requestId(int32_t()),
-        supportedProtocols(std::vector<ProtocolVersionPair >())
-        { }
 };
 
 struct _endpoint_avsc_Union__13__ {
@@ -558,10 +460,6 @@ struct ConfigurationSyncRequest {
     typedef _endpoint_avsc_Union__13__ resyncOnly_t;
     std::vector<uint8_t> configurationHash;
     resyncOnly_t resyncOnly;
-    ConfigurationSyncRequest() :
-        configurationHash(std::vector<uint8_t>()),
-        resyncOnly(resyncOnly_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__14__ {
@@ -626,12 +524,6 @@ struct NotificationSyncRequest {
     topicStates_t topicStates;
     acceptedUnicastNotifications_t acceptedUnicastNotifications;
     subscriptionCommands_t subscriptionCommands;
-    NotificationSyncRequest() :
-        topicListHash(int32_t()),
-        topicStates(topicStates_t()),
-        acceptedUnicastNotifications(acceptedUnicastNotifications_t()),
-        subscriptionCommands(subscriptionCommands_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__17__ {
@@ -695,11 +587,6 @@ struct UserSyncRequest {
     userAttachRequest_t userAttachRequest;
     endpointAttachRequests_t endpointAttachRequests;
     endpointDetachRequests_t endpointDetachRequests;
-    UserSyncRequest() :
-        userAttachRequest(userAttachRequest_t()),
-        endpointAttachRequests(endpointAttachRequests_t()),
-        endpointDetachRequests(endpointDetachRequests_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__20__ {
@@ -763,11 +650,6 @@ struct EventSyncRequest {
     eventSequenceNumberRequest_t eventSequenceNumberRequest;
     eventListenersRequests_t eventListenersRequests;
     events_t events;
-    EventSyncRequest() :
-        eventSequenceNumberRequest(eventSequenceNumberRequest_t()),
-        eventListenersRequests(eventListenersRequests_t()),
-        events(events_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__23__ {
@@ -792,37 +674,21 @@ struct LogSyncRequest {
     typedef _endpoint_avsc_Union__23__ logEntries_t;
     int32_t requestId;
     logEntries_t logEntries;
-    LogSyncRequest() :
-        requestId(int32_t()),
-        logEntries(logEntries_t())
-        { }
 };
 
 struct ProtocolMetaData {
     int32_t accessPointId;
     ProtocolVersionPair protocolVersionInfo;
     std::vector<uint8_t> connectionInfo;
-    ProtocolMetaData() :
-        accessPointId(int32_t()),
-        protocolVersionInfo(ProtocolVersionPair()),
-        connectionInfo(std::vector<uint8_t>())
-        { }
 };
 
 struct BootstrapSyncResponse {
     int32_t requestId;
     std::vector<ProtocolMetaData > supportedProtocols;
-    BootstrapSyncResponse() :
-        requestId(int32_t()),
-        supportedProtocols(std::vector<ProtocolMetaData >())
-        { }
 };
 
 struct ProfileSyncResponse {
     SyncResponseStatus responseStatus;
-    ProfileSyncResponse() :
-        responseStatus(SyncResponseStatus())
-        { }
 };
 
 struct _endpoint_avsc_Union__24__ {
@@ -867,11 +733,6 @@ struct ConfigurationSyncResponse {
     SyncResponseStatus responseStatus;
     confSchemaBody_t confSchemaBody;
     confDeltaBody_t confDeltaBody;
-    ConfigurationSyncResponse() :
-        responseStatus(SyncResponseStatus()),
-        confSchemaBody(confSchemaBody_t()),
-        confDeltaBody(confDeltaBody_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__26__ {
@@ -916,11 +777,6 @@ struct NotificationSyncResponse {
     SyncResponseStatus responseStatus;
     notifications_t notifications;
     availableTopics_t availableTopics;
-    NotificationSyncResponse() :
-        responseStatus(SyncResponseStatus()),
-        notifications(notifications_t()),
-        availableTopics(availableTopics_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__28__ {
@@ -1024,13 +880,6 @@ struct UserSyncResponse {
     userDetachNotification_t userDetachNotification;
     endpointAttachResponses_t endpointAttachResponses;
     endpointDetachResponses_t endpointDetachResponses;
-    UserSyncResponse() :
-        userAttachResponse(userAttachResponse_t()),
-        userAttachNotification(userAttachNotification_t()),
-        userDetachNotification(userDetachNotification_t()),
-        endpointAttachResponses(endpointAttachResponses_t()),
-        endpointDetachResponses(endpointDetachResponses_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__33__ {
@@ -1094,11 +943,6 @@ struct EventSyncResponse {
     eventSequenceNumberResponse_t eventSequenceNumberResponse;
     eventListenersResponses_t eventListenersResponses;
     events_t events;
-    EventSyncResponse() :
-        eventSequenceNumberResponse(eventSequenceNumberResponse_t()),
-        eventListenersResponses(eventListenersResponses_t()),
-        events(events_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__36__ {
@@ -1124,11 +968,6 @@ struct LogDeliveryStatus {
     int32_t requestId;
     SyncResponseResultType result;
     errorCode_t errorCode;
-    LogDeliveryStatus() :
-        requestId(int32_t()),
-        result(SyncResponseResultType()),
-        errorCode(errorCode_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__37__ {
@@ -1152,25 +991,15 @@ public:
 struct LogSyncResponse {
     typedef _endpoint_avsc_Union__37__ deliveryStatuses_t;
     deliveryStatuses_t deliveryStatuses;
-    LogSyncResponse() :
-        deliveryStatuses(deliveryStatuses_t())
-        { }
 };
 
 struct RedirectSyncResponse {
     int32_t accessPointId;
-    RedirectSyncResponse() :
-        accessPointId(int32_t())
-        { }
 };
 
 struct ExtensionSync {
     int32_t extensionId;
     std::vector<uint8_t> payload;
-    ExtensionSync() :
-        extensionId(int32_t()),
-        payload(std::vector<uint8_t>())
-        { }
 };
 
 struct _endpoint_avsc_Union__38__ {
@@ -1355,18 +1184,6 @@ struct SyncRequest {
     eventSyncRequest_t eventSyncRequest;
     logSyncRequest_t logSyncRequest;
     extensionSyncRequests_t extensionSyncRequests;
-    SyncRequest() :
-        requestId(int32_t()),
-        syncRequestMetaData(syncRequestMetaData_t()),
-        bootstrapSyncRequest(bootstrapSyncRequest_t()),
-        profileSyncRequest(profileSyncRequest_t()),
-        configurationSyncRequest(configurationSyncRequest_t()),
-        notificationSyncRequest(notificationSyncRequest_t()),
-        userSyncRequest(userSyncRequest_t()),
-        eventSyncRequest(eventSyncRequest_t()),
-        logSyncRequest(logSyncRequest_t()),
-        extensionSyncRequests(extensionSyncRequests_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__47__ {
@@ -1552,28 +1369,11 @@ struct SyncResponse {
     redirectSyncResponse_t redirectSyncResponse;
     logSyncResponse_t logSyncResponse;
     extensionSyncResponses_t extensionSyncResponses;
-    SyncResponse() :
-        requestId(int32_t()),
-        status(SyncResponseResultType()),
-        bootstrapSyncResponse(bootstrapSyncResponse_t()),
-        profileSyncResponse(profileSyncResponse_t()),
-        configurationSyncResponse(configurationSyncResponse_t()),
-        notificationSyncResponse(notificationSyncResponse_t()),
-        userSyncResponse(userSyncResponse_t()),
-        eventSyncResponse(eventSyncResponse_t()),
-        redirectSyncResponse(redirectSyncResponse_t()),
-        logSyncResponse(logSyncResponse_t()),
-        extensionSyncResponses(extensionSyncResponses_t())
-        { }
 };
 
 struct TopicSubscriptionInfo {
     Topic topicInfo;
     int32_t seqNumber;
-    TopicSubscriptionInfo() :
-        topicInfo(Topic()),
-        seqNumber(int32_t())
-        { }
 };
 
 struct _endpoint_avsc_Union__56__ {
@@ -3202,180 +3002,71 @@ template<> struct codec_traits<kaa::TopicState> {
         avro::encode(e, v.seqNumber);
     }
     static void decode(Decoder& d, kaa::TopicState& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.topicId);
-                    break;
-                case 1:
-                    avro::decode(d, v.seqNumber);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.topicId);
-            avro::decode(d, v.seqNumber);
-        }
+        avro::decode(d, v.topicId);
+        avro::decode(d, v.seqNumber);
     }
 };
 
 template<> struct codec_traits<kaa::SyncResponseStatus> {
     static void encode(Encoder& e, kaa::SyncResponseStatus v) {
-		if (v < kaa::NO_DELTA || v > kaa::RESYNC)
-		{
-			std::ostringstream error;
-			error << "enum value " << v << " is out of bound for kaa::SyncResponseStatus and cannot be encoded";
-			throw avro::Exception(error.str());
-		}
         e.encodeEnum(v);
     }
     static void decode(Decoder& d, kaa::SyncResponseStatus& v) {
-		size_t index = d.decodeEnum();
-		if (index < kaa::NO_DELTA || index > kaa::RESYNC)
-		{
-			std::ostringstream error;
-			error << "enum value " << index << " is out of bound for kaa::SyncResponseStatus and cannot be decoded";
-			throw avro::Exception(error.str());
-		}
-        v = static_cast<kaa::SyncResponseStatus>(index);
+        v = static_cast<kaa::SyncResponseStatus>(d.decodeEnum());
     }
 };
 
 template<> struct codec_traits<kaa::NotificationType> {
     static void encode(Encoder& e, kaa::NotificationType v) {
-		if (v < kaa::SYSTEM || v > kaa::CUSTOM)
-		{
-			std::ostringstream error;
-			error << "enum value " << v << " is out of bound for kaa::NotificationType and cannot be encoded";
-			throw avro::Exception(error.str());
-		}
         e.encodeEnum(v);
     }
     static void decode(Decoder& d, kaa::NotificationType& v) {
-		size_t index = d.decodeEnum();
-		if (index < kaa::SYSTEM || index > kaa::CUSTOM)
-		{
-			std::ostringstream error;
-			error << "enum value " << index << " is out of bound for kaa::NotificationType and cannot be decoded";
-			throw avro::Exception(error.str());
-		}
-        v = static_cast<kaa::NotificationType>(index);
+        v = static_cast<kaa::NotificationType>(d.decodeEnum());
     }
 };
 
 template<> struct codec_traits<kaa::SubscriptionType> {
     static void encode(Encoder& e, kaa::SubscriptionType v) {
-		if (v < kaa::MANDATORY_SUBSCRIPTION || v > kaa::OPTIONAL_SUBSCRIPTION)
-		{
-			std::ostringstream error;
-			error << "enum value " << v << " is out of bound for kaa::SubscriptionType and cannot be encoded";
-			throw avro::Exception(error.str());
-		}
         e.encodeEnum(v);
     }
     static void decode(Decoder& d, kaa::SubscriptionType& v) {
-		size_t index = d.decodeEnum();
-		if (index < kaa::MANDATORY_SUBSCRIPTION || index > kaa::OPTIONAL_SUBSCRIPTION)
-		{
-			std::ostringstream error;
-			error << "enum value " << index << " is out of bound for kaa::SubscriptionType and cannot be decoded";
-			throw avro::Exception(error.str());
-		}
-        v = static_cast<kaa::SubscriptionType>(index);
+        v = static_cast<kaa::SubscriptionType>(d.decodeEnum());
     }
 };
 
 template<> struct codec_traits<kaa::SubscriptionCommandType> {
     static void encode(Encoder& e, kaa::SubscriptionCommandType v) {
-		if (v < kaa::ADD || v > kaa::REMOVE)
-		{
-			std::ostringstream error;
-			error << "enum value " << v << " is out of bound for kaa::SubscriptionCommandType and cannot be encoded";
-			throw avro::Exception(error.str());
-		}
         e.encodeEnum(v);
     }
     static void decode(Decoder& d, kaa::SubscriptionCommandType& v) {
-		size_t index = d.decodeEnum();
-		if (index < kaa::ADD || index > kaa::REMOVE)
-		{
-			std::ostringstream error;
-			error << "enum value " << index << " is out of bound for kaa::SubscriptionCommandType and cannot be decoded";
-			throw avro::Exception(error.str());
-		}
-        v = static_cast<kaa::SubscriptionCommandType>(index);
+        v = static_cast<kaa::SubscriptionCommandType>(d.decodeEnum());
     }
 };
 
 template<> struct codec_traits<kaa::SyncResponseResultType> {
     static void encode(Encoder& e, kaa::SyncResponseResultType v) {
-		if (v < kaa::SUCCESS || v > kaa::REDIRECT)
-		{
-			std::ostringstream error;
-			error << "enum value " << v << " is out of bound for kaa::SyncResponseResultType and cannot be encoded";
-			throw avro::Exception(error.str());
-		}
         e.encodeEnum(v);
     }
     static void decode(Decoder& d, kaa::SyncResponseResultType& v) {
-		size_t index = d.decodeEnum();
-		if (index < kaa::SUCCESS || index > kaa::REDIRECT)
-		{
-			std::ostringstream error;
-			error << "enum value " << index << " is out of bound for kaa::SyncResponseResultType and cannot be decoded";
-			throw avro::Exception(error.str());
-		}
-        v = static_cast<kaa::SyncResponseResultType>(index);
+        v = static_cast<kaa::SyncResponseResultType>(d.decodeEnum());
     }
 };
 
 template<> struct codec_traits<kaa::LogDeliveryErrorCode> {
     static void encode(Encoder& e, kaa::LogDeliveryErrorCode v) {
-		if (v < kaa::NO_APPENDERS_CONFIGURED || v > kaa::REMOTE_INTERNAL_ERROR)
-		{
-			std::ostringstream error;
-			error << "enum value " << v << " is out of bound for kaa::LogDeliveryErrorCode and cannot be encoded";
-			throw avro::Exception(error.str());
-		}
         e.encodeEnum(v);
     }
     static void decode(Decoder& d, kaa::LogDeliveryErrorCode& v) {
-		size_t index = d.decodeEnum();
-		if (index < kaa::NO_APPENDERS_CONFIGURED || index > kaa::REMOTE_INTERNAL_ERROR)
-		{
-			std::ostringstream error;
-			error << "enum value " << index << " is out of bound for kaa::LogDeliveryErrorCode and cannot be decoded";
-			throw avro::Exception(error.str());
-		}
-        v = static_cast<kaa::LogDeliveryErrorCode>(index);
+        v = static_cast<kaa::LogDeliveryErrorCode>(d.decodeEnum());
     }
 };
 
 template<> struct codec_traits<kaa::UserAttachErrorCode> {
     static void encode(Encoder& e, kaa::UserAttachErrorCode v) {
-		if (v < kaa::NO_VERIFIER_CONFIGURED || v > kaa::OTHER)
-		{
-			std::ostringstream error;
-			error << "enum value " << v << " is out of bound for kaa::UserAttachErrorCode and cannot be encoded";
-			throw avro::Exception(error.str());
-		}
         e.encodeEnum(v);
     }
     static void decode(Decoder& d, kaa::UserAttachErrorCode& v) {
-		size_t index = d.decodeEnum();
-		if (index < kaa::NO_VERIFIER_CONFIGURED || index > kaa::OTHER)
-		{
-			std::ostringstream error;
-			error << "enum value " << index << " is out of bound for kaa::UserAttachErrorCode and cannot be decoded";
-			throw avro::Exception(error.str());
-		}
-        v = static_cast<kaa::UserAttachErrorCode>(index);
+        v = static_cast<kaa::UserAttachErrorCode>(d.decodeEnum());
     }
 };
 
@@ -3385,26 +3076,8 @@ template<> struct codec_traits<kaa::SubscriptionCommand> {
         avro::encode(e, v.command);
     }
     static void decode(Decoder& d, kaa::SubscriptionCommand& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.topicId);
-                    break;
-                case 1:
-                    avro::decode(d, v.command);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.topicId);
-            avro::decode(d, v.command);
-        }
+        avro::decode(d, v.topicId);
+        avro::decode(d, v.command);
     }
 };
 
@@ -3415,30 +3088,9 @@ template<> struct codec_traits<kaa::UserAttachRequest> {
         avro::encode(e, v.userAccessToken);
     }
     static void decode(Decoder& d, kaa::UserAttachRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.userVerifierId);
-                    break;
-                case 1:
-                    avro::decode(d, v.userExternalId);
-                    break;
-                case 2:
-                    avro::decode(d, v.userAccessToken);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.userVerifierId);
-            avro::decode(d, v.userExternalId);
-            avro::decode(d, v.userAccessToken);
-        }
+        avro::decode(d, v.userVerifierId);
+        avro::decode(d, v.userExternalId);
+        avro::decode(d, v.userAccessToken);
     }
 };
 
@@ -3511,30 +3163,9 @@ template<> struct codec_traits<kaa::UserAttachResponse> {
         avro::encode(e, v.errorReason);
     }
     static void decode(Decoder& d, kaa::UserAttachResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.result);
-                    break;
-                case 1:
-                    avro::decode(d, v.errorCode);
-                    break;
-                case 2:
-                    avro::decode(d, v.errorReason);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.result);
-            avro::decode(d, v.errorCode);
-            avro::decode(d, v.errorReason);
-        }
+        avro::decode(d, v.result);
+        avro::decode(d, v.errorCode);
+        avro::decode(d, v.errorReason);
     }
 };
 
@@ -3544,26 +3175,8 @@ template<> struct codec_traits<kaa::UserAttachNotification> {
         avro::encode(e, v.endpointAccessToken);
     }
     static void decode(Decoder& d, kaa::UserAttachNotification& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.userExternalId);
-                    break;
-                case 1:
-                    avro::decode(d, v.endpointAccessToken);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.userExternalId);
-            avro::decode(d, v.endpointAccessToken);
-        }
+        avro::decode(d, v.userExternalId);
+        avro::decode(d, v.endpointAccessToken);
     }
 };
 
@@ -3572,22 +3185,7 @@ template<> struct codec_traits<kaa::UserDetachNotification> {
         avro::encode(e, v.endpointAccessToken);
     }
     static void decode(Decoder& d, kaa::UserDetachNotification& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.endpointAccessToken);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.endpointAccessToken);
-        }
+        avro::decode(d, v.endpointAccessToken);
     }
 };
 
@@ -3597,26 +3195,8 @@ template<> struct codec_traits<kaa::EndpointAttachRequest> {
         avro::encode(e, v.endpointAccessToken);
     }
     static void decode(Decoder& d, kaa::EndpointAttachRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.endpointAccessToken);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.endpointAccessToken);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.endpointAccessToken);
     }
 };
 
@@ -3658,30 +3238,9 @@ template<> struct codec_traits<kaa::EndpointAttachResponse> {
         avro::encode(e, v.result);
     }
     static void decode(Decoder& d, kaa::EndpointAttachResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.endpointKeyHash);
-                    break;
-                case 2:
-                    avro::decode(d, v.result);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.endpointKeyHash);
-            avro::decode(d, v.result);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.endpointKeyHash);
+        avro::decode(d, v.result);
     }
 };
 
@@ -3691,26 +3250,8 @@ template<> struct codec_traits<kaa::EndpointDetachRequest> {
         avro::encode(e, v.endpointKeyHash);
     }
     static void decode(Decoder& d, kaa::EndpointDetachRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.endpointKeyHash);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.endpointKeyHash);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.endpointKeyHash);
     }
 };
 
@@ -3720,26 +3261,8 @@ template<> struct codec_traits<kaa::EndpointDetachResponse> {
         avro::encode(e, v.result);
     }
     static void decode(Decoder& d, kaa::EndpointDetachResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.result);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.result);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.result);
     }
 };
 
@@ -3814,38 +3337,11 @@ template<> struct codec_traits<kaa::Event> {
         avro::encode(e, v.target);
     }
     static void decode(Decoder& d, kaa::Event& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.seqNum);
-                    break;
-                case 1:
-                    avro::decode(d, v.eventClassFQN);
-                    break;
-                case 2:
-                    avro::decode(d, v.eventData);
-                    break;
-                case 3:
-                    avro::decode(d, v.source);
-                    break;
-                case 4:
-                    avro::decode(d, v.target);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.seqNum);
-            avro::decode(d, v.eventClassFQN);
-            avro::decode(d, v.eventData);
-            avro::decode(d, v.source);
-            avro::decode(d, v.target);
-        }
+        avro::decode(d, v.seqNum);
+        avro::decode(d, v.eventClassFQN);
+        avro::decode(d, v.eventData);
+        avro::decode(d, v.source);
+        avro::decode(d, v.target);
     }
 };
 
@@ -3855,26 +3351,8 @@ template<> struct codec_traits<kaa::EventListenersRequest> {
         avro::encode(e, v.eventClassFQNs);
     }
     static void decode(Decoder& d, kaa::EventListenersRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.eventClassFQNs);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.eventClassFQNs);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.eventClassFQNs);
     }
 };
 
@@ -3916,30 +3394,9 @@ template<> struct codec_traits<kaa::EventListenersResponse> {
         avro::encode(e, v.result);
     }
     static void decode(Decoder& d, kaa::EventListenersResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.listeners);
-                    break;
-                case 2:
-                    avro::decode(d, v.result);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.listeners);
-            avro::decode(d, v.result);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.listeners);
+        avro::decode(d, v.result);
     }
 };
 
@@ -3947,18 +3404,6 @@ template<> struct codec_traits<kaa::EventSequenceNumberRequest> {
     static void encode(Encoder& e, const kaa::EventSequenceNumberRequest& v) {
     }
     static void decode(Decoder& d, kaa::EventSequenceNumberRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                default:
-                    break;
-                }
-            }
-        } else {
-        }
     }
 };
 
@@ -3967,22 +3412,7 @@ template<> struct codec_traits<kaa::EventSequenceNumberResponse> {
         avro::encode(e, v.seqNum);
     }
     static void decode(Decoder& d, kaa::EventSequenceNumberResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.seqNum);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.seqNum);
-        }
+        avro::decode(d, v.seqNum);
     }
 };
 
@@ -4057,38 +3487,11 @@ template<> struct codec_traits<kaa::Notification> {
         avro::encode(e, v.body);
     }
     static void decode(Decoder& d, kaa::Notification& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.topicId);
-                    break;
-                case 1:
-                    avro::decode(d, v.type);
-                    break;
-                case 2:
-                    avro::decode(d, v.uid);
-                    break;
-                case 3:
-                    avro::decode(d, v.seqNumber);
-                    break;
-                case 4:
-                    avro::decode(d, v.body);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.topicId);
-            avro::decode(d, v.type);
-            avro::decode(d, v.uid);
-            avro::decode(d, v.seqNumber);
-            avro::decode(d, v.body);
-        }
+        avro::decode(d, v.topicId);
+        avro::decode(d, v.type);
+        avro::decode(d, v.uid);
+        avro::decode(d, v.seqNumber);
+        avro::decode(d, v.body);
     }
 };
 
@@ -4099,30 +3502,9 @@ template<> struct codec_traits<kaa::Topic> {
         avro::encode(e, v.subscriptionType);
     }
     static void decode(Decoder& d, kaa::Topic& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.id);
-                    break;
-                case 1:
-                    avro::decode(d, v.name);
-                    break;
-                case 2:
-                    avro::decode(d, v.subscriptionType);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.id);
-            avro::decode(d, v.name);
-            avro::decode(d, v.subscriptionType);
-        }
+        avro::decode(d, v.id);
+        avro::decode(d, v.name);
+        avro::decode(d, v.subscriptionType);
     }
 };
 
@@ -4131,22 +3513,7 @@ template<> struct codec_traits<kaa::LogEntry> {
         avro::encode(e, v.data);
     }
     static void decode(Decoder& d, kaa::LogEntry& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.data);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.data);
-        }
+        avro::decode(d, v.data);
     }
 };
 
@@ -4251,34 +3618,10 @@ template<> struct codec_traits<kaa::SyncRequestMetaData> {
         avro::encode(e, v.timeout);
     }
     static void decode(Decoder& d, kaa::SyncRequestMetaData& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.sdkToken);
-                    break;
-                case 1:
-                    avro::decode(d, v.endpointPublicKeyHash);
-                    break;
-                case 2:
-                    avro::decode(d, v.profileHash);
-                    break;
-                case 3:
-                    avro::decode(d, v.timeout);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.sdkToken);
-            avro::decode(d, v.endpointPublicKeyHash);
-            avro::decode(d, v.profileHash);
-            avro::decode(d, v.timeout);
-        }
+        avro::decode(d, v.sdkToken);
+        avro::decode(d, v.endpointPublicKeyHash);
+        avro::decode(d, v.profileHash);
+        avro::decode(d, v.timeout);
     }
 };
 
@@ -4351,30 +3694,9 @@ template<> struct codec_traits<kaa::ProfileSyncRequest> {
         avro::encode(e, v.endpointAccessToken);
     }
     static void decode(Decoder& d, kaa::ProfileSyncRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.endpointPublicKey);
-                    break;
-                case 1:
-                    avro::decode(d, v.profileBody);
-                    break;
-                case 2:
-                    avro::decode(d, v.endpointAccessToken);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.endpointPublicKey);
-            avro::decode(d, v.profileBody);
-            avro::decode(d, v.endpointAccessToken);
-        }
+        avro::decode(d, v.endpointPublicKey);
+        avro::decode(d, v.profileBody);
+        avro::decode(d, v.endpointAccessToken);
     }
 };
 
@@ -4384,26 +3706,8 @@ template<> struct codec_traits<kaa::ProtocolVersionPair> {
         avro::encode(e, v.version);
     }
     static void decode(Decoder& d, kaa::ProtocolVersionPair& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.id);
-                    break;
-                case 1:
-                    avro::decode(d, v.version);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.id);
-            avro::decode(d, v.version);
-        }
+        avro::decode(d, v.id);
+        avro::decode(d, v.version);
     }
 };
 
@@ -4413,26 +3717,8 @@ template<> struct codec_traits<kaa::BootstrapSyncRequest> {
         avro::encode(e, v.supportedProtocols);
     }
     static void decode(Decoder& d, kaa::BootstrapSyncRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.supportedProtocols);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.supportedProtocols);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.supportedProtocols);
     }
 };
 
@@ -4473,26 +3759,8 @@ template<> struct codec_traits<kaa::ConfigurationSyncRequest> {
         avro::encode(e, v.resyncOnly);
     }
     static void decode(Decoder& d, kaa::ConfigurationSyncRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.configurationHash);
-                    break;
-                case 1:
-                    avro::decode(d, v.resyncOnly);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.configurationHash);
-            avro::decode(d, v.resyncOnly);
-        }
+        avro::decode(d, v.configurationHash);
+        avro::decode(d, v.resyncOnly);
     }
 };
 
@@ -4597,34 +3865,10 @@ template<> struct codec_traits<kaa::NotificationSyncRequest> {
         avro::encode(e, v.subscriptionCommands);
     }
     static void decode(Decoder& d, kaa::NotificationSyncRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.topicListHash);
-                    break;
-                case 1:
-                    avro::decode(d, v.topicStates);
-                    break;
-                case 2:
-                    avro::decode(d, v.acceptedUnicastNotifications);
-                    break;
-                case 3:
-                    avro::decode(d, v.subscriptionCommands);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.topicListHash);
-            avro::decode(d, v.topicStates);
-            avro::decode(d, v.acceptedUnicastNotifications);
-            avro::decode(d, v.subscriptionCommands);
-        }
+        avro::decode(d, v.topicListHash);
+        avro::decode(d, v.topicStates);
+        avro::decode(d, v.acceptedUnicastNotifications);
+        avro::decode(d, v.subscriptionCommands);
     }
 };
 
@@ -4728,30 +3972,9 @@ template<> struct codec_traits<kaa::UserSyncRequest> {
         avro::encode(e, v.endpointDetachRequests);
     }
     static void decode(Decoder& d, kaa::UserSyncRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.userAttachRequest);
-                    break;
-                case 1:
-                    avro::decode(d, v.endpointAttachRequests);
-                    break;
-                case 2:
-                    avro::decode(d, v.endpointDetachRequests);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.userAttachRequest);
-            avro::decode(d, v.endpointAttachRequests);
-            avro::decode(d, v.endpointDetachRequests);
-        }
+        avro::decode(d, v.userAttachRequest);
+        avro::decode(d, v.endpointAttachRequests);
+        avro::decode(d, v.endpointDetachRequests);
     }
 };
 
@@ -4855,30 +4078,9 @@ template<> struct codec_traits<kaa::EventSyncRequest> {
         avro::encode(e, v.events);
     }
     static void decode(Decoder& d, kaa::EventSyncRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.eventSequenceNumberRequest);
-                    break;
-                case 1:
-                    avro::decode(d, v.eventListenersRequests);
-                    break;
-                case 2:
-                    avro::decode(d, v.events);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.eventSequenceNumberRequest);
-            avro::decode(d, v.eventListenersRequests);
-            avro::decode(d, v.events);
-        }
+        avro::decode(d, v.eventSequenceNumberRequest);
+        avro::decode(d, v.eventListenersRequests);
+        avro::decode(d, v.events);
     }
 };
 
@@ -4919,26 +4121,8 @@ template<> struct codec_traits<kaa::LogSyncRequest> {
         avro::encode(e, v.logEntries);
     }
     static void decode(Decoder& d, kaa::LogSyncRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.logEntries);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.logEntries);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.logEntries);
     }
 };
 
@@ -4949,30 +4133,9 @@ template<> struct codec_traits<kaa::ProtocolMetaData> {
         avro::encode(e, v.connectionInfo);
     }
     static void decode(Decoder& d, kaa::ProtocolMetaData& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.accessPointId);
-                    break;
-                case 1:
-                    avro::decode(d, v.protocolVersionInfo);
-                    break;
-                case 2:
-                    avro::decode(d, v.connectionInfo);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.accessPointId);
-            avro::decode(d, v.protocolVersionInfo);
-            avro::decode(d, v.connectionInfo);
-        }
+        avro::decode(d, v.accessPointId);
+        avro::decode(d, v.protocolVersionInfo);
+        avro::decode(d, v.connectionInfo);
     }
 };
 
@@ -4982,26 +4145,8 @@ template<> struct codec_traits<kaa::BootstrapSyncResponse> {
         avro::encode(e, v.supportedProtocols);
     }
     static void decode(Decoder& d, kaa::BootstrapSyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.supportedProtocols);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.supportedProtocols);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.supportedProtocols);
     }
 };
 
@@ -5010,22 +4155,7 @@ template<> struct codec_traits<kaa::ProfileSyncResponse> {
         avro::encode(e, v.responseStatus);
     }
     static void decode(Decoder& d, kaa::ProfileSyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.responseStatus);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.responseStatus);
-        }
+        avro::decode(d, v.responseStatus);
     }
 };
 
@@ -5098,30 +4228,9 @@ template<> struct codec_traits<kaa::ConfigurationSyncResponse> {
         avro::encode(e, v.confDeltaBody);
     }
     static void decode(Decoder& d, kaa::ConfigurationSyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.responseStatus);
-                    break;
-                case 1:
-                    avro::decode(d, v.confSchemaBody);
-                    break;
-                case 2:
-                    avro::decode(d, v.confDeltaBody);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.responseStatus);
-            avro::decode(d, v.confSchemaBody);
-            avro::decode(d, v.confDeltaBody);
-        }
+        avro::decode(d, v.responseStatus);
+        avro::decode(d, v.confSchemaBody);
+        avro::decode(d, v.confDeltaBody);
     }
 };
 
@@ -5194,30 +4303,9 @@ template<> struct codec_traits<kaa::NotificationSyncResponse> {
         avro::encode(e, v.availableTopics);
     }
     static void decode(Decoder& d, kaa::NotificationSyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.responseStatus);
-                    break;
-                case 1:
-                    avro::decode(d, v.notifications);
-                    break;
-                case 2:
-                    avro::decode(d, v.availableTopics);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.responseStatus);
-            avro::decode(d, v.notifications);
-            avro::decode(d, v.availableTopics);
-        }
+        avro::decode(d, v.responseStatus);
+        avro::decode(d, v.notifications);
+        avro::decode(d, v.availableTopics);
     }
 };
 
@@ -5385,38 +4473,11 @@ template<> struct codec_traits<kaa::UserSyncResponse> {
         avro::encode(e, v.endpointDetachResponses);
     }
     static void decode(Decoder& d, kaa::UserSyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.userAttachResponse);
-                    break;
-                case 1:
-                    avro::decode(d, v.userAttachNotification);
-                    break;
-                case 2:
-                    avro::decode(d, v.userDetachNotification);
-                    break;
-                case 3:
-                    avro::decode(d, v.endpointAttachResponses);
-                    break;
-                case 4:
-                    avro::decode(d, v.endpointDetachResponses);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.userAttachResponse);
-            avro::decode(d, v.userAttachNotification);
-            avro::decode(d, v.userDetachNotification);
-            avro::decode(d, v.endpointAttachResponses);
-            avro::decode(d, v.endpointDetachResponses);
-        }
+        avro::decode(d, v.userAttachResponse);
+        avro::decode(d, v.userAttachNotification);
+        avro::decode(d, v.userDetachNotification);
+        avro::decode(d, v.endpointAttachResponses);
+        avro::decode(d, v.endpointDetachResponses);
     }
 };
 
@@ -5520,30 +4581,9 @@ template<> struct codec_traits<kaa::EventSyncResponse> {
         avro::encode(e, v.events);
     }
     static void decode(Decoder& d, kaa::EventSyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.eventSequenceNumberResponse);
-                    break;
-                case 1:
-                    avro::decode(d, v.eventListenersResponses);
-                    break;
-                case 2:
-                    avro::decode(d, v.events);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.eventSequenceNumberResponse);
-            avro::decode(d, v.eventListenersResponses);
-            avro::decode(d, v.events);
-        }
+        avro::decode(d, v.eventSequenceNumberResponse);
+        avro::decode(d, v.eventListenersResponses);
+        avro::decode(d, v.events);
     }
 };
 
@@ -5585,30 +4625,9 @@ template<> struct codec_traits<kaa::LogDeliveryStatus> {
         avro::encode(e, v.errorCode);
     }
     static void decode(Decoder& d, kaa::LogDeliveryStatus& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.result);
-                    break;
-                case 2:
-                    avro::decode(d, v.errorCode);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.result);
-            avro::decode(d, v.errorCode);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.result);
+        avro::decode(d, v.errorCode);
     }
 };
 
@@ -5648,22 +4667,7 @@ template<> struct codec_traits<kaa::LogSyncResponse> {
         avro::encode(e, v.deliveryStatuses);
     }
     static void decode(Decoder& d, kaa::LogSyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.deliveryStatuses);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.deliveryStatuses);
-        }
+        avro::decode(d, v.deliveryStatuses);
     }
 };
 
@@ -5672,22 +4676,7 @@ template<> struct codec_traits<kaa::RedirectSyncResponse> {
         avro::encode(e, v.accessPointId);
     }
     static void decode(Decoder& d, kaa::RedirectSyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.accessPointId);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.accessPointId);
-        }
+        avro::decode(d, v.accessPointId);
     }
 };
 
@@ -5697,26 +4686,8 @@ template<> struct codec_traits<kaa::ExtensionSync> {
         avro::encode(e, v.payload);
     }
     static void decode(Decoder& d, kaa::ExtensionSync& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.extensionId);
-                    break;
-                case 1:
-                    avro::decode(d, v.payload);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.extensionId);
-            avro::decode(d, v.payload);
-        }
+        avro::decode(d, v.extensionId);
+        avro::decode(d, v.payload);
     }
 };
 
@@ -6013,58 +4984,16 @@ template<> struct codec_traits<kaa::SyncRequest> {
         avro::encode(e, v.extensionSyncRequests);
     }
     static void decode(Decoder& d, kaa::SyncRequest& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.syncRequestMetaData);
-                    break;
-                case 2:
-                    avro::decode(d, v.bootstrapSyncRequest);
-                    break;
-                case 3:
-                    avro::decode(d, v.profileSyncRequest);
-                    break;
-                case 4:
-                    avro::decode(d, v.configurationSyncRequest);
-                    break;
-                case 5:
-                    avro::decode(d, v.notificationSyncRequest);
-                    break;
-                case 6:
-                    avro::decode(d, v.userSyncRequest);
-                    break;
-                case 7:
-                    avro::decode(d, v.eventSyncRequest);
-                    break;
-                case 8:
-                    avro::decode(d, v.logSyncRequest);
-                    break;
-                case 9:
-                    avro::decode(d, v.extensionSyncRequests);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.syncRequestMetaData);
-            avro::decode(d, v.bootstrapSyncRequest);
-            avro::decode(d, v.profileSyncRequest);
-            avro::decode(d, v.configurationSyncRequest);
-            avro::decode(d, v.notificationSyncRequest);
-            avro::decode(d, v.userSyncRequest);
-            avro::decode(d, v.eventSyncRequest);
-            avro::decode(d, v.logSyncRequest);
-            avro::decode(d, v.extensionSyncRequests);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.syncRequestMetaData);
+        avro::decode(d, v.bootstrapSyncRequest);
+        avro::decode(d, v.profileSyncRequest);
+        avro::decode(d, v.configurationSyncRequest);
+        avro::decode(d, v.notificationSyncRequest);
+        avro::decode(d, v.userSyncRequest);
+        avro::decode(d, v.eventSyncRequest);
+        avro::decode(d, v.logSyncRequest);
+        avro::decode(d, v.extensionSyncRequests);
     }
 };
 
@@ -6362,62 +5291,17 @@ template<> struct codec_traits<kaa::SyncResponse> {
         avro::encode(e, v.extensionSyncResponses);
     }
     static void decode(Decoder& d, kaa::SyncResponse& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.requestId);
-                    break;
-                case 1:
-                    avro::decode(d, v.status);
-                    break;
-                case 2:
-                    avro::decode(d, v.bootstrapSyncResponse);
-                    break;
-                case 3:
-                    avro::decode(d, v.profileSyncResponse);
-                    break;
-                case 4:
-                    avro::decode(d, v.configurationSyncResponse);
-                    break;
-                case 5:
-                    avro::decode(d, v.notificationSyncResponse);
-                    break;
-                case 6:
-                    avro::decode(d, v.userSyncResponse);
-                    break;
-                case 7:
-                    avro::decode(d, v.eventSyncResponse);
-                    break;
-                case 8:
-                    avro::decode(d, v.redirectSyncResponse);
-                    break;
-                case 9:
-                    avro::decode(d, v.logSyncResponse);
-                    break;
-                case 10:
-                    avro::decode(d, v.extensionSyncResponses);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.requestId);
-            avro::decode(d, v.status);
-            avro::decode(d, v.bootstrapSyncResponse);
-            avro::decode(d, v.profileSyncResponse);
-            avro::decode(d, v.configurationSyncResponse);
-            avro::decode(d, v.notificationSyncResponse);
-            avro::decode(d, v.userSyncResponse);
-            avro::decode(d, v.eventSyncResponse);
-            avro::decode(d, v.redirectSyncResponse);
-            avro::decode(d, v.logSyncResponse);
-            avro::decode(d, v.extensionSyncResponses);
-        }
+        avro::decode(d, v.requestId);
+        avro::decode(d, v.status);
+        avro::decode(d, v.bootstrapSyncResponse);
+        avro::decode(d, v.profileSyncResponse);
+        avro::decode(d, v.configurationSyncResponse);
+        avro::decode(d, v.notificationSyncResponse);
+        avro::decode(d, v.userSyncResponse);
+        avro::decode(d, v.eventSyncResponse);
+        avro::decode(d, v.redirectSyncResponse);
+        avro::decode(d, v.logSyncResponse);
+        avro::decode(d, v.extensionSyncResponses);
     }
 };
 
@@ -6427,26 +5311,8 @@ template<> struct codec_traits<kaa::TopicSubscriptionInfo> {
         avro::encode(e, v.seqNumber);
     }
     static void decode(Decoder& d, kaa::TopicSubscriptionInfo& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.topicInfo);
-                    break;
-                case 1:
-                    avro::decode(d, v.seqNumber);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.topicInfo);
-            avro::decode(d, v.seqNumber);
-        }
+        avro::decode(d, v.topicInfo);
+        avro::decode(d, v.seqNumber);
     }
 };
 

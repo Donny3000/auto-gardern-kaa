@@ -21,7 +21,6 @@
 #define KAA_CONFIGURATION_GEN_CONFIGURATIONGEN_HPP_293169158__H_
 
 
-#include <sstream>
 #include "boost/any.hpp"
 #include "avro/Specific.hh"
 #include "avro/Encoder.hh"
@@ -30,9 +29,6 @@
 namespace kaa_configuration {
 struct Configuration {
     int32_t sampleFrequency;
-    Configuration() :
-        sampleFrequency(int32_t())
-        { }
 };
 
 }
@@ -42,22 +38,7 @@ template<> struct codec_traits<kaa_configuration::Configuration> {
         avro::encode(e, v.sampleFrequency);
     }
     static void decode(Decoder& d, kaa_configuration::Configuration& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.sampleFrequency);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.sampleFrequency);
-        }
+        avro::decode(d, v.sampleFrequency);
     }
 };
 

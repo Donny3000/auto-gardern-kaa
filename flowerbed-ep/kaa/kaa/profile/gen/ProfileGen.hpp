@@ -21,7 +21,6 @@
 #define KAA_PROFILE_GEN_PROFILEGEN_HPP_293169158__H_
 
 
-#include <sstream>
 #include "boost/any.hpp"
 #include "avro/Specific.hh"
 #include "avro/Encoder.hh"
@@ -29,8 +28,6 @@
 
 namespace kaa_profile {
 struct EmptyData {
-    EmptyData()
-        { }
 };
 
 }
@@ -39,18 +36,6 @@ template<> struct codec_traits<kaa_profile::EmptyData> {
     static void encode(Encoder& e, const kaa_profile::EmptyData& v) {
     }
     static void decode(Decoder& d, kaa_profile::EmptyData& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                default:
-                    break;
-                }
-            }
-        } else {
-        }
     }
 };
 

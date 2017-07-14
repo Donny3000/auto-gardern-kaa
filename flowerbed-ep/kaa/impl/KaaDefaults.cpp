@@ -32,7 +32,7 @@ const char * const BUILD_VERSION = "0.10.0";
 
 const char * const BUILD_COMMIT_HASH = "";
 
-const char * const SDK_TOKEN = "htDQg-4tuQLuJ5yfJ7EsOUrPuaw";
+const char * const SDK_TOKEN = "pspi181qarTfUPoonE2ApMwY0Vs";
 
 const std::uint32_t POLLING_PERIOD_SECONDS = 5;
 

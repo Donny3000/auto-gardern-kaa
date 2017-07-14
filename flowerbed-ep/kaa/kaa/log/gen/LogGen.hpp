@@ -21,7 +21,6 @@
 #define KAA_LOG_GEN_LOGGEN_HPP_293169158__H_
 
 
-#include <sstream>
 #include "boost/any.hpp"
 #include "avro/Specific.hh"
 #include "avro/Encoder.hh"
@@ -49,9 +48,6 @@ public:
 struct SensorCollection {
     typedef _log_avsc_Union__0__ soil_temperature_t;
     soil_temperature_t soil_temperature;
-    SensorCollection() :
-        soil_temperature(soil_temperature_t())
-        { }
 };
 
 inline
@@ -107,22 +103,7 @@ template<> struct codec_traits<kaa_log::SensorCollection> {
         avro::encode(e, v.soil_temperature);
     }
     static void decode(Decoder& d, kaa_log::SensorCollection& v) {
-        if (avro::ResolvingDecoder *rd =
-            dynamic_cast<avro::ResolvingDecoder *>(&d)) {
-            const std::vector<size_t> fo = rd->fieldOrder();
-            for (std::vector<size_t>::const_iterator it = fo.begin();
-                it != fo.end(); ++it) {
-                switch (*it) {
-                case 0:
-                    avro::decode(d, v.soil_temperature);
-                    break;
-                default:
-                    break;
-                }
-            }
-        } else {
-            avro::decode(d, v.soil_temperature);
-        }
+        avro::decode(d, v.soil_temperature);
     }
 };
 
