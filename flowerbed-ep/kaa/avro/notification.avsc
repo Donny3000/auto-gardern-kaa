@@ -1,1 +1,1 @@
-{"type":"record","name":"EmptyData","namespace":"org.kaaproject.kaa.schema.system","fields":[],"version":1,"displayName":"Empty Data","description":"Auto generated"}
+{"type":"record","name":"EndnodeNotifications","namespace":"ardugarden.schema.notifications","fields":[{"name":"turnWaterOn","type":"boolean","by_default":false}],"version":1,"displayName":"ArduGarden Notifications"}

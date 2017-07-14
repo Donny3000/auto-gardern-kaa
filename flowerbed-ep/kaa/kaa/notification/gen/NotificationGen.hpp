@@ -21,6 +21,7 @@
 #define KAA_NOTIFICATION_GEN_NOTIFICATIONGEN_HPP_293169158__H_
 
 
+#include <sstream>
 #include "boost/any.hpp"
 #include "avro/Specific.hh"
 #include "avro/Encoder.hh"
@@ -28,6 +29,8 @@
 
 namespace kaa_notification {
 struct EmptyData {
+    EmptyData()
+        { }
 };
 
 }

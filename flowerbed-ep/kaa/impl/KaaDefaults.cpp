@@ -32,7 +32,7 @@ const char * const BUILD_VERSION = "0.10.0";
 
 const char * const BUILD_COMMIT_HASH = "";
 
-const char * const SDK_TOKEN = "pspi181qarTfUPoonE2ApMwY0Vs";
+const char * const SDK_TOKEN = "ls0z2sF7XxPLT_JtWoly5xgC-Tw";
 
 const std::uint32_t POLLING_PERIOD_SECONDS = 5;
 
@@ -73,7 +73,7 @@ listOfServers.push_back(createTransportInfo(0x929a2016, 0xfb9a3cf0, 1, "AAABJjCC
 
 const Botan::secure_vector<std::uint8_t>& getDefaultConfigData() 
 {
-    static const Botan::secure_vector<std::uint8_t> configData = Botan::base64_decode("Ag==");
+    static const Botan::secure_vector<std::uint8_t> configData = Botan::base64_decode("AAIAAA==");
     return configData;
 }
 

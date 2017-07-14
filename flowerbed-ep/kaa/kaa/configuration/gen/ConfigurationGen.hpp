@@ -21,24 +21,28 @@
 #define KAA_CONFIGURATION_GEN_CONFIGURATIONGEN_HPP_293169158__H_
 
 
+#include <sstream>
 #include "boost/any.hpp"
 #include "avro/Specific.hh"
 #include "avro/Encoder.hh"
 #include "avro/Decoder.hh"
 
 namespace kaa_configuration {
-struct Configuration {
-    int32_t sampleFrequency;
+struct ConfigurationRootRecord {
+    std::string data;
+    ConfigurationRootRecord() :
+        data(std::string())
+        { }
 };
 
 }
 namespace avro {
-template<> struct codec_traits<kaa_configuration::Configuration> {
-    static void encode(Encoder& e, const kaa_configuration::Configuration& v) {
-        avro::encode(e, v.sampleFrequency);
+template<> struct codec_traits<kaa_configuration::ConfigurationRootRecord> {
+    static void encode(Encoder& e, const kaa_configuration::ConfigurationRootRecord& v) {
+        avro::encode(e, v.data);
     }
-    static void decode(Decoder& d, kaa_configuration::Configuration& v) {
-        avro::decode(d, v.sampleFrequency);
+    static void decode(Decoder& d, kaa_configuration::ConfigurationRootRecord& v) {
+        avro::decode(d, v.data);
     }
 };
 

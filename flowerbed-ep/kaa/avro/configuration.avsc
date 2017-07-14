@@ -1,1 +1,1 @@
-{"type":"record","name":"Configuration","namespace":"org.kaaproject.kaa.schema.sensordata","fields":[{"name":"sampleFrequency","type":"int","by_default":1}],"version":1}
+{"type":"record","name":"Configuration","namespace":"ardugarden.schema.sensordata","fields":[{"name":"samplePeriod","type":["int","null"],"displayName":"Sensor Sample Period","by_default":1},{"name":"turnWaterOn","type":["boolean","null"],"displayName":"Turn Irrigation On","displayPrompt":"Manually turn on the water?","by_default":false}],"version":1}
