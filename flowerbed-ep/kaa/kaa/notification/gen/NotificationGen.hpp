@@ -21,24 +21,24 @@
 #define KAA_NOTIFICATION_GEN_NOTIFICATIONGEN_HPP_293169158__H_
 
 
-#include <sstream>
 #include "boost/any.hpp"
 #include "avro/Specific.hh"
 #include "avro/Encoder.hh"
 #include "avro/Decoder.hh"
 
 namespace kaa_notification {
-struct EmptyData {
-    EmptyData()
-        { }
+struct EndnodeNotifications {
+    bool turnWaterOn;
 };
 
 }
 namespace avro {
-template<> struct codec_traits<kaa_notification::EmptyData> {
-    static void encode(Encoder& e, const kaa_notification::EmptyData& v) {
+template<> struct codec_traits<kaa_notification::EndnodeNotifications> {
+    static void encode(Encoder& e, const kaa_notification::EndnodeNotifications& v) {
+        avro::encode(e, v.turnWaterOn);
     }
-    static void decode(Decoder& d, kaa_notification::EmptyData& v) {
+    static void decode(Decoder& d, kaa_notification::EndnodeNotifications& v) {
+        avro::decode(d, v.turnWaterOn);
     }
 };
 
