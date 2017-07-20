@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 cmake_minimum_required(VERSION 3.2)
 project(flowerbed-ep)
 
@@ -56,3 +57,13 @@ add_subdirectory(kaa)
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 
 target_link_libraries(${PROJECT_NAME} kaac)
+=======
+cmake_minimum_required(VERSION 2.8.12)
+
+project(sensor_node_ep CXX)
+   
+add_subdirectory(kaa)
+
+add_executable(sensor_node_ep src/main.cpp)
+target_link_libraries(sensor_node_ep kaacpp)
+>>>>>>> de48f4fba7114fea0c209a5fd2da2c8045c70ec6
