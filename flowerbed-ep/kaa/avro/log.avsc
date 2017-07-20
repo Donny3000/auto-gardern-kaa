@@ -1,1 +1,0 @@
-{"type":"record","name":"SensorCollection","namespace":"org.kaaproject.kaa.schema.sensordata","fields":[{"name":"soil_temperature","type":["double","null"],"displayName":"Soil Temperature"}],"version":1,"displayName":"Collection of Sensor Data Types"}

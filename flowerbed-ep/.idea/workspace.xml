@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="Project" targetName="PLATFORMIO" />
+      <config projectName="Project" targetName="DEBUG" />
+      <config projectName="Project" targetName="flowerbed-ep" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/Modules/FindAvro.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/Modules/FindBotan.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/Modules/FindSqlite3.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/configuration.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/default_configuration_schema.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/default_log_schema.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/default_notification_schema.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/default_system_empty_schema.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/endpoint.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/log.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/misc.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/notification.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avro/profile.avsc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avrogen.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/avrogen.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/docs/qnx/INSTALL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/ClientStatus.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/Kaa.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/KaaClient.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/KaaClientProperties.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/KaaDefaults.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/bootstrap/BootstrapManager.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/bootstrap/BootstrapTransport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/IPTransportInfo.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/KaaChannelManager.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/RedirectionTransport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/SyncDataProcessor.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/TransportProtocolIdConstants.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/connectivity/IPConnectivityChecker.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/connectivity/PingConnectivityChecker.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/impl/AbstractHttpChannel.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/impl/DefaultBootstrapChannel.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/impl/DefaultOperationHttpChannel.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/impl/DefaultOperationLongPollChannel.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/channel/impl/DefaultOperationTcpChannel.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/common/EndpointObjectHash.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/configuration/ConfigurationTransport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/configuration/manager/ConfigurationManager.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/configuration/storage/FileConfigurationStorage.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/context/AbstractExecutorContext.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/context/SimpleExecutorContext.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/event/EventManager.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/event/EventTransport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/event/registration/EndpointRegistrationManager.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/event/registration/UserTransport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/failover/DefaultFailoverStrategy.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/http/HttpClient.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/http/HttpResponse.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/http/HttpUrl.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/http/MultipartPostHttpRequest.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/kaatcp/ConnackMessage.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/kaatcp/KaaSyncResponse.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/kaatcp/KaaTcpCommon.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/kaatcp/KaaTcpParser.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/kaatcp/KaaTcpResponseProcessor.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/log/DefaultLogUploadStrategy.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/log/LogCollector.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/log/LogStorageConstants.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/log/LoggingTransport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/log/MemoryLogStorage.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/log/RecordFuture.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/log/SQLiteDBLogStorage.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/logging/DefaultLogger.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/logging/Log.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/logging/LoggingUtils.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/notification/NotificationManager.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/notification/NotificationTransport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/profile/ProfileTransport.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/security/KeyUtils.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/security/RsaEncoderDecoder.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/transport/HttpDataProcessor.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/impl/utils/ThreadPool.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/ClientStatus.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/EndpointConnectionInfo.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/IKaaClient.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/IKaaClientContext.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/IKaaClientPlatformContext.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/IKaaClientStateStorage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/Kaa.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/KaaClient.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/KaaClientContext.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/KaaClientPlatformContext.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/KaaClientProperties.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/KaaClientStateListener.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/KaaDefaults.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/KaaThread.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/Mainpage.dox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/bootstrap/BootstrapManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/bootstrap/BootstrapTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/bootstrap/IBootstrapManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/ChannelDirection.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/GenericTransportInfo.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/IDataChannel.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/IKaaChannelManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/IKaaDataDemultiplexer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/IKaaDataMultiplexer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/IPTransportInfo.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/ITransportConnectionInfo.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/ImpermanentDataChannel.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/KaaChannelManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/MetaDataTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/RedirectionTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/ServerType.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/SyncDataProcessor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/Transport.dox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/TransportProtocolId.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/TransportProtocolIdConstants.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/connectivity/IConnectivityChecker.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/connectivity/IPConnectivityChecker.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/connectivity/IPingServerStorage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/connectivity/PingConnectivityChecker.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/impl/AbstractHttpChannel.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/impl/DefaultBootstrapChannel.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/impl/DefaultOperationHttpChannel.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/impl/DefaultOperationLongPollChannel.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/impl/DefaultOperationTcpChannel.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/AbstractKaaTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/IBootstrapTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/IConfigurationTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/IEventTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/IKaaTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/ILoggingTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/IMetaDataTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/INotificationTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/IProfileTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/IRedirectionTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/channel/transport/IUserTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/AvroByteArrayConverter.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/EndpointObjectHash.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/TransportType.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/UuidGenerator.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/exception/BadCredentials.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/exception/HttpTransportException.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/exception/KaaException.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/exception/TransportNotFoundException.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/exception/TransportRedirectException.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/common/exception/UnavailableTopicException.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/Configuration.dox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/ConfigurationTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/IConfigurationHashContainer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/IConfigurationProcessor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/gen/ConfigurationDefinitions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/gen/ConfigurationGen.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/manager/ConfigurationManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/manager/IConfigurationManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/manager/IConfigurationReceiver.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/storage/FileConfigurationStorage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/configuration/storage/IConfigurationStorage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/context/AbstractExecutorContext.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/context/IExecutorContext.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/context/SimpleExecutorContext.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/context/SingleThreadExecutorContext.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/EventManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/EventModule.dox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/EventTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/IEventDataProcessor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/IEventFamily.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/IEventListenersResolver.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/IEventManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/IFetchEventListeners.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/gen/EventFamilyFactory.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/EndpointRegistrationManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/IAttachEndpointCallback.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/IAttachStatusListener.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/IDetachEndpointCallback.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/IEndpointRegistrationManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/IRegistrationProcessor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/IUserAttachCallback.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/UserRegistrationModule.dox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/event/registration/UserTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/failover/DefaultFailoverStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/failover/FailoverCommon.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/failover/IFailoverStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/gen/EndpointGen.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/http/HttpClient.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/http/HttpResponse.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/http/HttpUrl.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/http/HttpUtils.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/http/IHttpClient.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/http/IHttpRequest.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/http/IHttpResponse.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/http/MultipartPostHttpRequest.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/ConnackMessage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/ConnectMessage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/DisconnectMessage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/IKaaTcpRequest.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/KaaSyncRequest.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/KaaSyncResponse.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/KaaTcpCommon.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/KaaTcpParser.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/KaaTcpResponseProcessor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/kaatcp/PingRequest.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/BucketInfo.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/DefaultLogUploadStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/IAccessPointCommand.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/ILogCollector.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/ILogDeliveryListener.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/ILogFailoverCommand.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/ILogProcessor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/ILogStorage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/ILogStorageStatus.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/ILogUploadStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/LogBucket.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/LogCollector.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/LogRecord.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/LogStorageConstants.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/Logging.dox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/LoggingTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/MemoryLogStorage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/RecordFuture.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/RecordInfo.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/SQLiteDBLogStorage.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/gen/LogDefinitions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/gen/LogGen.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/strategies/PeriodicLogUploadStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/strategies/RecordCountLogUploadStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/strategies/RecordCountWithTimeLimitLogUploadStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/strategies/StorageSizeLogUploadStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/log/strategies/StorageSizeWithTimeLimitLogUploadStrategy.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/logging/DefaultLogger.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/logging/ILogger.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/logging/Log.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/logging/LoggingUtils.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/INotificationListener.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/INotificationManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/INotificationProcessor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/INotificationTopicListListener.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/Notification.dox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/NotificationManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/NotificationTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/gen/NotificationDefinitions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/notification/gen/NotificationGen.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/observer/KaaObservable.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/DefaultProfileContainer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/IProfileContainer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/IProfileListener.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/IProfileManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/Profile.dox" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/ProfileManager.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/ProfileTransport.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/gen/ProfileDefinitions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/profile/gen/ProfileGen.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/security/IEncoderDecoder.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/security/KeyUtils.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/security/RsaEncoderDecoder.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/security/SecurityDefinitions.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/transact/AbstractTransactable.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/transact/ITransactable.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/transact/TransactionId.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/transport/HttpDataProcessor.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/transport/TransportException.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/utils/IThreadPool.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/utils/KaaTimer.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/utils/ThreadPool.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/kaa/utils/TimeUtils.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/toolchains/artik.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/toolchains/edison.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/toolchains/qnx-x86.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/tools/avro-cpp-disable-tests.patch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/tools/build_sdk_thirdparty.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/tools/env.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaa/tools/qnx/include/custom/string.h" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaa/CMakeLists.txt" afterPath="$PROJECT_DIR$/kaa/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaa/toolchains/rpi.cmake" afterPath="$PROJECT_DIR$/kaa/toolchains/rpi.cmake" />
+    </list>
+    <ignored path="platformio.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="flowerbed-ep" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/platformio.ini" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/main.c" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>C/C++</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerbed-ep" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerbed-ep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerbed-ep" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flowerbed-ep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/platformio.ini" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.PLATFORMIO_UPDATE">
+    <configuration default="true" type="#com.sylvanaar.idea.Lua.run.LuaConfigurationType" factoryName="Lua Script">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="ALTERNATE_INTERPRETER" value="false" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="flowerbed-ep" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="GoAppEngineRunConfiguration" factoryName="Go App Engine">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <filePath value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoRemoteDebugConfigurationType" factoryName="Go Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeWebKit" factoryName="NW.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="clion" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <platform value="ANDROID" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="clion" />
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="clion" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="clion" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="clion" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="clion" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="PLATFORMIO_UPDATE" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="PLATFORMIO_UPDATE_ALL" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.PLATFORMIO_UPDATE" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec922180-b3d3-40f1-af0b-2568113a9075" name="Default" comment="" />
+      <created>1435919971910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1435919971910</updated>
+      <workItem from="1500522419195" duration="907000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="907000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24236111" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/platformio.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeListsPrivate.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
