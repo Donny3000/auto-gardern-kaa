@@ -26,13 +26,9 @@ extern "C" {
 /**
  * @typedef User-defined endpoint profile structure.
  */
-<<<<<<< HEAD:flowerbed-ep/kaa/src/kaa/gen/kaa_profile_definitions.h
 typedef kaa_profile_empty_data_t kaa_profile_t;
 
 # define KAA_PROFILE_DESERIALIZE(reader)  kaa_profile_empty_data_deserialize(reader)
-=======
-typedef kaa_log::DataCollection KaaUserLogRecord;
->>>>>>> de48f4fba7114fea0c209a5fd2da2c8045c70ec6:flowerbed-ep/kaa/kaa/log/gen/LogDefinitions.hpp
 
 # ifdef __cplusplus
 }      /* extern "C" */

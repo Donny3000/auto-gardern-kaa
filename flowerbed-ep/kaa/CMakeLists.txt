@@ -120,7 +120,7 @@ set(KAA_THIRDPARTY_LIBRARIES mbedtls)
 
 # Sets the default build platform to POSIX.
 if (NOT DEFINED KAA_PLATFORM)
-    set(KAA_PLATFORM "esp8266")
+    set(KAA_PLATFORM "posix")
 endif ()
 
 #
